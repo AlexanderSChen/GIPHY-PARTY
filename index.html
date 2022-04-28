@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+  <link rel="stylesheet"
+        href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- <div class="form-body">
+    <form class="term-input" id="form" placeholder="Enter a search term">
+      <input type="text" name="term" id="search">
+      <input type="submit" id="submit-btn">
+    </form>
+  </div>
+  <div class="gif-body">
+    <img src="" id="gif">
+  </div> -->
+  
+  <!-- create container class div to house the header and input elements -->
+  <div class="container">
+    <!-- create a header size h1 for GIPHY PARTY with text center and margin top and bottom responsive spacing of 1.5rem -->
+    <h1 class="text-center mt-4 mb-4">GIPHY PARTY</h1>
+    <!-- create form element thats inline with the container div, direction flex, content justified in the center and responsive margin bottom 1.5 rem  -->
+    <form class="form-inline d-flex justify-content-center mb-4">
+      <!-- create text input element where user will enter their search term for the gif they want, height set using form-control set to default height -->
+      <input type="text" id="search" name=search
+        placeholder="Enter a search term" class="form-control mr-2" />
+        <!-- create rounded submit button that is gray using btn-secondary  -->
+      <input type="submit" class="btn btn-secondary" value="Search Giphy!" />
+      <!-- create rounded remove button that is red using btn-danger margin left spaced * .5  -->
+      <button id="remove" class="btn btn-danger ml-2">Remove Images</button>
+      <!-- end of form  -->
+    </form>
+    <!-- create div for the gif area where the gifs will be added in the JS  -->
+    <div id="gif-area" class="row">
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
